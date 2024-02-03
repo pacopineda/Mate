@@ -8,11 +8,11 @@ namespace Mate {
 
     export enum Motors {
         //% blockId="left motor" block="Izquierda"
-        PM1 = 0,
+        M1 = 0,
         //% blockId="right motor" block="Derecha"
-        PM2 = 1,
+        M2 = 1,
         //% blockId="all motor" block="Ambos"
-        PAll = 2
+        All = 2
     }
 
     export enum Dir {
