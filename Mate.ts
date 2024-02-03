@@ -27,7 +27,7 @@ namespace Mate {
       */
 
     //% weight=90
-    //% blockId=motor_MotorRun block="Pinmotor|%index|move|%Dir|at speed|%speed"
+    //% blockId=motor_MotorRun_mat block="Pinmotor|%index|move|%Dir|at speed|%speed"
     //% speed.min=0 speed.max=255
     //% index.fieldEditor="gridpicker" index.fieldOptions.columns=2
     //% direction.fieldEditor="gridpicker" direction.fieldOptions.columns=2
@@ -52,11 +52,22 @@ namespace Mate {
      */
 
     //% weight=20
-    //% blockId=motor_motorStop block="Pinmotor |%motors stop"
+    //% blockId=motor_motorStop_mat block="Pinmotor |%motors stop"
     //% motors.fieldEditor="gridpicker" motors.fieldOptions.columns=2 
     export function motorStop(motors: Motors): void {
         if (motors == 0) {
             pins.digitalWritePin(DigitalPin.P0, 0);
         }
+        if (motors == 1) {
+            pins.digitalWritePin(DigitalPin.P1, 0);
+        }
+
+        if (motors == 2) {
+            pins.digitalWritePin(DigitalPin.P0, 0);
+            pins.digitalWritePin(DigitalPin.P1, 0);
+        }
+
     }
-}
+
+}// Añade tu código aquí
+
