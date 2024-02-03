@@ -17,9 +17,9 @@ namespace Mate {
 
     export enum Dir {
         //% blockId="CW" block="Adelante"
-        CW = 0x0,
+        CW = 0,
         //% blockId="CCW" block="Atras"
-        CCW = 0x1
+        CCW = 1
     }
 
     /**
@@ -32,8 +32,16 @@ namespace Mate {
     //% index.fieldEditor="gridpicker" index.fieldOptions.columns=2
     //% direction.fieldEditor="gridpicker" direction.fieldOptions.columns=2
     export function motorRun(index: Motors, direction: Dir, speed: number): void {
-        let spin = (speed * 90) / 255 + 90;
-        let spin2 = 88 - (speed * 90) / 255;
+        let spin = 0;
+        let spin2 = 0 ;
+        if (direction == 0){
+            let spin = (speed * 90) / 255 + 90;
+            let spin2 = 86 - (speed * 90) / 255;
+        }
+        if (direction == 1) {
+            let spin2 = (speed * 90) / 255 + 90;
+            let spin = 86 - (speed * 90) / 255;
+        }
         if (index == 0) {
             pins.servoWritePin(AnalogPin.P0, spin);
         }
