@@ -37,12 +37,14 @@ namespace Mate {
         if (direction == 0){
             let spin = (speed * 90) / 255 + 90;
             let spin2 = 86 - (speed * 90) / 255;
+            pins.servoWritePin(AnalogPin.P0, spin);
         }
         if (direction == 1) {
             let spin2 = (speed * 90) / 255 + 90;
             let spin = 86 - (speed * 90) / 255;
+            pins.servoWritePin(AnalogPin.P1, spin2);
         }
-        if (index == 0) {
+ /*       if (index == 0) {
             pins.servoWritePin(AnalogPin.P0, spin);
         }
         if (index == 1) {
@@ -54,7 +56,7 @@ namespace Mate {
             pins.servoWritePin(AnalogPin.P1, spin2);
 
         }
-    }
+  */  }
 
     /**
      * Stop the Mate motor.
