@@ -27,7 +27,7 @@ namespace Mate {
       */
 
     //% weight=90
-    //% blockId=motor_MotorRun_mat block="Pinmotor|%index|move|%Dir|at speed|%speed"
+    //% blockId=motor_MotorRun block="Pinmotor|%index|move|%Dir|at speed|%speed"
     //% speed.min=0 speed.max=255
     //% index.fieldEditor="gridpicker" index.fieldOptions.columns=2
     //% direction.fieldEditor="gridpicker" direction.fieldOptions.columns=2
