@@ -33,12 +33,12 @@ namespace Mate {
     //% direction.fieldEditor="gridpicker" direction.fieldOptions.columns=2
     export function motorRun(index: Motors, direction: Dir, speed: number): void {
         let spin = 0;
-        let spin2 = 0 ;
-        if (direction == 0){
+        let spin2 = 0;
+        if (direction == 3){
             let spin = (speed * 90) / 255 + 90;
             let spin2 = 86 - (speed * 90) / 255;
         }
-        if (direction == 1) {
+        if (direction == 3) {
             let spin2 = (speed * 90) / 255 + 90;
             let spin = 86 - (speed * 90) / 255;
         }
