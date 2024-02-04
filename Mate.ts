@@ -16,9 +16,9 @@ namespace Mate {
     }
 
     export enum Dir {
-        //% blockId="CW" block="Adelante"
+        //% blockId="CW" block="Avanzar"
         CW = 0,
-        //% blockId="CCW" block="Atras"
+        //% blockId="CCW" block="Retroceder"
         CCW = 1
     }
 
@@ -27,7 +27,7 @@ namespace Mate {
       */
 
     //% weight=90
-    //% blockId=motor_MotorRun_mat block="Pinmotor|%index|move|%Dir|at speed|%speed"
+    //% blockId=motor_MotorRun_mat block="Pinmotor|%index|sentido|%Dir|velocidad|%speed"
     //% speed.min=0 speed.max=255
     //% index.fieldEditor="gridpicker" index.fieldOptions.columns=2
     //% direction.fieldEditor="gridpicker" direction.fieldOptions.columns=2
