@@ -43,23 +43,23 @@ namespace Mate {
         }
         if (direction == 0 && index == 1) {
             let spin2 = 87 - (speed * 90) / 255;
-            pins.servoWritePin(AnalogPin.P1, spin2)
+            pins.servoWritePin(AnalogPin.P3, spin2)
         }
         if (direction == 1 && index == 1) {
             let spin2 = (speed * 90) / 255 + 90;
-            pins.servoWritePin(AnalogPin.P1, spin2)
+            pins.servoWritePin(AnalogPin.P3, spin2)
         }
         if (direction == 0 && index == 2) {
             let spin = (speed * 90) / 255 + 90;
             let spin2 = 87 - (speed * 90) / 255;
             pins.servoWritePin(AnalogPin.P0, spin);
-            pins.servoWritePin(AnalogPin.P1, spin2);
+            pins.servoWritePin(AnalogPin.P3, spin2);
         }
         if (direction == 1 && index == 2) {
             let spin = 87 - (speed * 90) / 255;
             let spin2 = (speed * 90) / 255 + 90;
             pins.servoWritePin(AnalogPin.P0, spin);
-            pins.servoWritePin(AnalogPin.P1, spin2);
+            pins.servoWritePin(AnalogPin.P3, spin2);
         }
     }
 
@@ -75,12 +75,12 @@ namespace Mate {
             pins.digitalWritePin(DigitalPin.P0, 0);
         }
         if (motors == 1) {
-            pins.digitalWritePin(DigitalPin.P1, 0);
+            pins.digitalWritePin(DigitalPin.P3, 0);
         }
 
         if (motors == 2) {
             pins.digitalWritePin(DigitalPin.P0, 0);
-            pins.digitalWritePin(DigitalPin.P1, 0);
+            pins.digitalWritePin(DigitalPin.P3, 0);
         }
 
     }
