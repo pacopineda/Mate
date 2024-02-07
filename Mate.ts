@@ -32,70 +32,71 @@ namespace Mate {
     //% index.fieldEditor="gridpicker" index.fieldOptions.columns=2
     //% direction.fieldEditor="gridpicker" direction.fieldOptions.columns=2
     export function motorRun(index: Motors, direction: Dir, speed: number): void {
-
+    let lento
+    let rapido
         if(speed <= 50 ){
-            let lento = 50;
-            let rapido = 120;
+             lento = 50;
+             rapido = 120;
         }
         if (speed > 50 && speed <= 70){
-            let lento = 60;
-            let rapido = 130;
+             lento = 60;
+             rapido = 130;
         }
     if (speed > 70 && speed <= 90){
-            let lento = 80;
-            let rapido = 142;
+             lento = 80;
+             rapido = 142;
         }
     if (speed > 90 && speed <= 110){
-            let lento = 100;
-            let rapido = 155;
+             lento = 100;
+             rapido = 155;
         }
     if (speed > 110 && speed <= 130){
-            let lento = 120;
-            let rapido = 166;
+             lento = 120;
+             rapido = 166;
         }
     if (speed > 130 && speed <= 150){
-            let lento = 140;
-            let rapido = 178;
+             lento = 140;
+             rapido = 178;
         }
     if (speed > 150 && speed <= 170){
-            let lento = 160;
-            let rapido = 189;
+             lento = 160;
+             rapido = 189;
         }
     if (speed > 170 && speed <= 190){
-            let lento = 180;
-            let rapido = 215;
+             lento = 180;
+             rapido = 215;
         }
     if (speed > 190 && speed <= 210){
-            let lento = 200;
-            let rapido = 225;
+             lento = 200;
+             rapido = 225;
         }
     if (speed > 210 && speed <= 230){
-            let lento = 210;
-            let rapido = 232;
+             lento = 210;
+             rapido = 232;
         }
     if (speed > 230 && speed <= 255){
-            let lento = 255;
-            let rapido = 266;
+             lento = 255;
+             rapido = 266;
         }
 
         if (direction == 0 && index == 0){
-            let speed1 = lento;
-            let spin = (speed1 * 90) / 1000 + 90;
+             speed1 = lento;
+             spin = (speed1 * 90) / 1000 + 90;
             pins.servoWritePin(AnalogPin.P0, spin);
         }
         if (direction == 1 && index == 0) {
-            let speed1 = rapido;
-            let spin = 87 - (speed1 * 90) / 1000;
+             speed1 = rapido;
+             spin = 87 - (speed1 * 90) / 1000;
             pins.servoWritePin(AnalogPin.P0, spin);
         }
         if (direction == 0 && index == 1) {
-            let speed2 = rapido;
-            let spin2 = 87 - (speed2 * 90) / 1000;
+             speed2 = rapido;
+             spin2 = 87 - (speed2 * 90) / 1000;
             pins.servoWritePin(AnalogPin.P8, spin2)
         }
         if (direction == 1 && index == 1) {
-            let speed2 = lento;
-            let spin2 = (speed2 * 90) / 1000 + 90;
+             speed2 = lento;
+             spin2 = (speed2 * 90) / 1000 + 90;
             pins.servoWritePin(AnalogPin.P8, spin2)
         }
         if (direction == 0 && index == 2) {
