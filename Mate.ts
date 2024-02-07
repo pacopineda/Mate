@@ -40,23 +40,23 @@ namespace Mate {
     let spin2
         if(speed <= 50 ){
              lento = 50;
-             rapido = 133;
+             rapido = 125;
         }
         if (speed > 50 && speed <= 70){
              lento = 60;
-             rapido = 138;
+             rapido = 135;
         }
     if (speed > 70 && speed <= 90){
              lento = 80;
-             rapido = 154;
+             rapido = 152;
         }
     if (speed > 90 && speed <= 110){
              lento = 100;
-             rapido = 167;
+             rapido = 165;
         }
     if (speed > 110 && speed <= 130){
              lento = 120;
-             rapido = 178;
+             rapido = 175;
         }
     if (speed > 130 && speed <= 150){
              lento = 140;
@@ -68,7 +68,7 @@ namespace Mate {
         }
     if (speed > 170 && speed <= 190){
              lento = 180;
-             rapido = 217;
+             rapido = 215;
         }
     if (speed > 190 && speed <= 210){
              lento = 200;
@@ -76,7 +76,7 @@ namespace Mate {
         }
     if (speed > 210 && speed <= 230){
              lento = 210;
-             rapido = 232;
+             rapido = 237;
         }
     if (speed > 230 && speed <= 255){
              lento = 255;
