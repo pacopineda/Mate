@@ -34,6 +34,10 @@ namespace Mate {
     export function motorRun(index: Motors, direction: Dir, speed: number): void {
     let lento
     let rapido
+    let speed1
+    let speed2
+    let spin
+    let spin2
         if(speed <= 50 ){
              lento = 50;
              rapido = 120;
@@ -85,8 +89,8 @@ namespace Mate {
             pins.servoWritePin(AnalogPin.P0, spin);
         }
         if (direction == 1 && index == 0) {
-             speed1 = rapido;
-             spin = 87 - (speed1 * 90) / 1000;
+              speed1 = rapido;
+              spin = 87 - (speed1 * 90) / 1000;
             pins.servoWritePin(AnalogPin.P0, spin);
         }
         if (direction == 0 && index == 1) {
@@ -100,18 +104,18 @@ namespace Mate {
             pins.servoWritePin(AnalogPin.P8, spin2)
         }
         if (direction == 0 && index == 2) {
-            let speed1 = lento;
-            let speed2 = rapido;
-            let spin = (speed1 * 90) / 1000 + 90;
-            let spin2 = 87 - (speed2 * 90) / 1000;
+             speed1 = lento;
+             speed2 = rapido;
+             spin = (speed1 * 90) / 1000 + 90;
+             spin2 = 87 - (speed2 * 90) / 1000;
             pins.servoWritePin(AnalogPin.P0, spin);
             pins.servoWritePin(AnalogPin.P8, spin2);
         }
         if (direction == 1 && index == 2) {
-            let speed1 = rapido;
-            let speed2 = lento;
-            let spin = 87 - (speed1 * 90) / 1000;
-            let spin2 = (speed2 * 90) / 1000 + 90;
+             speed1 = rapido;
+             speed2 = lento;
+             spin = 87 - (speed1 * 90) / 1000;
+             spin2 = (speed2 * 90) / 1000 + 90;
             pins.servoWritePin(AnalogPin.P0, spin);
             pins.servoWritePin(AnalogPin.P8, spin2);
         }
