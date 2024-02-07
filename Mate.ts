@@ -37,43 +37,43 @@ namespace Mate {
             let lento = 50;
             let rapido = 120;
         }
-        if (speed > 50 && speed <= 70)}
+        if (speed > 50 && speed <= 70){
             let lento = 60;
             let rapido = 130;
         }
-    if (speed > 70 && speed <= 90)}
+    if (speed > 70 && speed <= 90){
             let lento = 80;
             let rapido = 142;
         }
-    if (speed > 90 && speed <= 110)}
+    if (speed > 90 && speed <= 110){
             let lento = 100;
             let rapido = 155;
         }
-    if (speed > 110 && speed <= 130)}
+    if (speed > 110 && speed <= 130){
             let lento = 120;
             let rapido = 166;
         }
-    if (speed > 130 && speed <= 150)}
+    if (speed > 130 && speed <= 150){
             let lento = 140;
             let rapido = 178;
         }
-    if (speed > 150 && speed <= 170)}
+    if (speed > 150 && speed <= 170){
             let lento = 160;
             let rapido = 189;
         }
-    if (speed > 170 && speed <= 190)}
+    if (speed > 170 && speed <= 190){
             let lento = 180;
             let rapido = 215;
         }
-    if (speed > 190 && speed <= 210)}
+    if (speed > 190 && speed <= 210){
             let lento = 200;
             let rapido = 225;
         }
-    if (speed > 210 && speed <= 230)}
+    if (speed > 210 && speed <= 230){
             let lento = 210;
             let rapido = 232;
         }
-    if (speed > 230 && speed <= 255)}
+    if (speed > 230 && speed <= 255){
             let lento = 255;
             let rapido = 266;
         }
