@@ -52,31 +52,31 @@ namespace Mate {
         }
     if (speed > 90 && speed <= 110){
              lento = 100;
-             rapido = 135;
+             rapido = 137;
         }
     if (speed > 110 && speed <= 130){
              lento = 120;
-             rapido = 151;
+             rapido = 153;
         }
     if (speed > 130 && speed <= 150){
              lento = 140;
-             rapido = 167;
+             rapido = 169;
         }
     if (speed > 150 && speed <= 170){
              lento = 160;
-             rapido = 181;
+             rapido = 183;
         }
     if (speed > 170 && speed <= 190){
              lento = 180;
-             rapido = 202;
+             rapido = 204;
         }
     if (speed > 190 && speed <= 210){
              lento = 200;
-             rapido = 216;
+             rapido = 220;
         }
     if (speed > 210 && speed <= 230){
              lento = 220;
-             rapido = 233;
+             rapido = 235;
         }
     if (speed > 230 && speed <= 255){
              lento = 255;
