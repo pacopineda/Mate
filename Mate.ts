@@ -40,47 +40,47 @@ namespace Mate {
     let spin2
         if(speed <= 50 ){
              lento = 50;
-             rapido = 83;
+             rapido = 115;
         }
         if (speed > 50 && speed <= 70){
              lento = 60;
-             rapido = 93;
+             rapido = 125;
         }
     if (speed > 70 && speed <= 90){
              lento = 80;
-             rapido = 115;
+             rapido = 150;
         }
     if (speed > 90 && speed <= 110){
              lento = 100;
-             rapido = 131;
+             rapido = 162;
         }
     if (speed > 110 && speed <= 130){
              lento = 120;
-             rapido = 146;
+             rapido = 172;
         }
     if (speed > 130 && speed <= 150){
              lento = 140;
-             rapido = 161;
+             rapido = 182;
         }
     if (speed > 150 && speed <= 170){
              lento = 160;
-             rapido = 176;
+             rapido = 191;
         }
     if (speed > 170 && speed <= 190){
              lento = 180;
-             rapido = 198;
+             rapido = 215;
         }
     if (speed > 190 && speed <= 210){
              lento = 200;
-             rapido = 213;
+             rapido = 225;
         }
     if (speed > 210 && speed <= 230){
              lento = 210;
-             rapido = 224;
+             rapido = 237;
         }
     if (speed > 230 && speed <= 255){
              lento = 255;
-             rapido = 261;
+             rapido = 266;
         }
 
         if (direction == 0 && index == 0){
@@ -90,12 +90,12 @@ namespace Mate {
         }
         if (direction == 1 && index == 0) {
               speed1 = rapido;
-              spin = 87 - (speed1 * 90) / 1000;
+              spin = 90 - (speed1 * 90) / 1000;
             pins.servoWritePin(AnalogPin.P0, spin);
         }
         if (direction == 0 && index == 1) {
              speed2 = rapido;
-             spin2 = 87 - (speed2 * 90) / 1000;
+             spin2 = 90 - (speed2 * 90) / 1000;
             pins.servoWritePin(AnalogPin.P8, spin2)
         }
         if (direction == 1 && index == 1) {
@@ -107,14 +107,14 @@ namespace Mate {
              speed1 = lento;
              speed2 = rapido;
              spin = (speed1 * 90) / 1000 + 90;
-             spin2 = 87 - (speed2 * 90) / 1000;
+             spin2 = 90 - (speed2 * 90) / 1000;
             pins.servoWritePin(AnalogPin.P0, spin);
             pins.servoWritePin(AnalogPin.P8, spin2);
         }
         if (direction == 1 && index == 2) {
              speed1 = rapido;
              speed2 = lento;
-             spin = 87 - (speed1 * 90) / 1000;
+             spin = 90 - (speed1 * 90) / 1000;
              spin2 = (speed2 * 90) / 1000 + 90;
             pins.servoWritePin(AnalogPin.P0, spin);
             pins.servoWritePin(AnalogPin.P8, spin2);
