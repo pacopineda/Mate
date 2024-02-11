@@ -32,12 +32,12 @@ namespace Mate {
     //% index.fieldEditor="gridpicker" index.fieldOptions.columns=2
     //% direction.fieldEditor="gridpicker" direction.fieldOptions.columns=2
     export function motorRun(index: Motors, direction: Dir, speed: number): void {
-    let lento
-    let rapido
-    let speed1
-    let speed2
-    let spin
-    let spin2
+    let lento;
+    let rapido;
+    let speed1;
+    let speed2;
+    let spin;
+    let spin2;
 /*        if(speed <= 50 ){
              lento = 5;
              rapido = 5;
