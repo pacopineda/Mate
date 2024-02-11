@@ -38,7 +38,7 @@ namespace Mate {
     let speed2
     let spin
     let spin2
-        if(speed <= 50 ){
+/*        if(speed <= 50 ){
              lento = 5;
              rapido = 5;
         }
@@ -78,7 +78,7 @@ namespace Mate {
              lento = 87;
              rapido = 87;
         }
-    
+*/    
      if (direction == 0 && index == 0){
             speed1 = lento;
             spin = speed1 + 90;
@@ -92,12 +92,12 @@ namespace Mate {
       if (direction == 0 && index == 1) {
              speed2 = rapido;
              spin2 = 90 - speed2;
-            pins.servoWritePin(AnalogPin.P8, spin2)
+            pins.servoWritePin(AnalogPin.P8, spin);
         }
        if (direction == 1 && index == 1) {
              speed2 = lento;
              spin2 = speed2 + 90;
-            pins.servoWritePin(AnalogPin.P8, spin2)
+            pins.servoWritePin(AnalogPin.P8, spin);
         }
         if (direction == 0 && index == 2) {
              speed1 = lento;
