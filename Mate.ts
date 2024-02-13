@@ -91,29 +91,29 @@ namespace Mate {
         }
       if (direction == 0 && index == 1) {
              speed2 = rapido;
-             spin2 = 84 - speed;
-            pins.servoWritePin(AnalogPin.P15, spin2);
+             spin2 = 83 - speed;
+            pins.servoWritePin(AnalogPin.P9, spin2);
         }
        if (direction == 1 && index == 1) {
              speed2 = lento;
-             spin2 = speed + 84;
-            pins.servoWritePin(AnalogPin.P15, spin2);
+             spin2 = speed + 83;
+            pins.servoWritePin(AnalogPin.P9, spin2);
         }
         if (direction == 0 && index == 2) {
              speed1 = lento;
              speed2 = rapido;
              spin = speed +85,5;
-             spin2 = 84 - speed;
+             spin2 = 83 - speed;
             pins.servoWritePin(AnalogPin.P0, spin);
-            pins.servoWritePin(AnalogPin.P8, spin2);
+            pins.servoWritePin(AnalogPin.P9, spin2);
         }
         if (direction == 1 && index == 2) {
              speed1 = rapido;
              speed2 = lento;
              spin = 85,5 - speed;
-             spin2 = speed + 84;
+             spin2 = speed + 83;
             pins.servoWritePin(AnalogPin.P0, spin);
-            pins.servoWritePin(AnalogPin.P8, spin2);
+            pins.servoWritePin(AnalogPin.P9, spin2);
         }
     }
 
@@ -129,12 +129,12 @@ namespace Mate {
             pins.digitalWritePin(DigitalPin.P0, 0);
         }
         if (motors == 1) {
-            pins.digitalWritePin(DigitalPin.P8, 0);
+            pins.digitalWritePin(DigitalPin.P9, 0);
         }
 
         if (motors == 2) {
             pins.digitalWritePin(DigitalPin.P0, 0);
-            pins.digitalWritePin(DigitalPin.P8, 0);
+            pins.digitalWritePin(DigitalPin.P9, 0);
         }
 
     }
