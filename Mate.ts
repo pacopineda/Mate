@@ -92,12 +92,12 @@ namespace Mate {
       if (direction == 0 && index == 1) {
              speed2 = rapido;
              spin2 = 83,5 - speed;
-            pins.servoWritePin(AnalogPin.P8, spin2);
+            pins.servoWritePin(AnalogPin.P15, spin2);
         }
        if (direction == 1 && index == 1) {
              speed2 = lento;
              spin2 = speed + 83,5;
-            pins.servoWritePin(AnalogPin.P8, spin2);
+            pins.servoWritePin(AnalogPin.P15, spin2);
         }
         if (direction == 0 && index == 2) {
              speed1 = lento;
