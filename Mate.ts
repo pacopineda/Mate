@@ -91,19 +91,19 @@ namespace Mate {
         }
       if (direction == 0 && index == 1) {
              speed2 = rapido;
-             spin2 = 85 - speed;
+             spin2 = 85,5 - speed;
             pins.servoWritePin(AnalogPin.P9, spin2);
         }
        if (direction == 1 && index == 1) {
              speed2 = lento;
-             spin2 = speed + 85;
+             spin2 = speed + 85,5;
             pins.servoWritePin(AnalogPin.P9, spin2);
         }
         if (direction == 0 && index == 2) {
              speed1 = lento;
              speed2 = rapido;
              spin = speed +85,5;
-             spin2 = 85 - speed;
+             spin2 = 85,5 - speed;
             pins.servoWritePin(AnalogPin.P0, spin);
             pins.servoWritePin(AnalogPin.P9, spin2);
         }
@@ -111,7 +111,7 @@ namespace Mate {
              speed1 = rapido;
              speed2 = lento;
              spin = 85,5 - speed;
-             spin2 = speed + 85;
+             spin2 = speed + 85,5;
             pins.servoWritePin(AnalogPin.P0, spin);
             pins.servoWritePin(AnalogPin.P9, spin2);
         }
